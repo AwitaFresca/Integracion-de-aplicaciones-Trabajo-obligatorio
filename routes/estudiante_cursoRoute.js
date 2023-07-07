@@ -10,6 +10,6 @@ router4.get('/cursos/:id/estudiantes', estudiantes_cursosController.getEstudiant
 
 router4.post('/cursos/:id/estudiantes', estudiantes_cursosController.addEstudiante);
 
-router4.put('/cursos/:id/estudiantes/:estudiante_id', estudiantes_cursosController.deleteEstudiante);
+router4.delete('/cursos/:id/estudiantes/:estudiante_id', estudiantes_cursosController.deleteEstudiante);
 
 module.exports = router4;

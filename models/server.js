@@ -27,6 +27,7 @@ class Server {
         this.app.use(express.json());
         this.app.use(cors());
         this.app.use(morgan());
+        this.app.use(express.static('public'));
     }
 
     listen(){
@@ -36,5 +37,5 @@ class Server {
     }
 
 }
-
+// Exportamos la clase, en este caso nuestro servicio
 module.exports = Server;
